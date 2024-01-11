@@ -1,10 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Pagia de Prueba para Produccion">
+    <div class="grid gap-4 p-[20px] grid-auto-fit-[375px] justify-items-center">
+        <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
+        <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
+        <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
+        <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
+        <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
+    </div>
 	
-</Layout>
-
-
- 
+    
+</Layout> 
