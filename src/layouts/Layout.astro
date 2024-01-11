@@ -4,6 +4,10 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import SearchBar from "../components/SearchBar.astro"
+import FloatingDock from "../components/FloatingDock.astro";
+import FloatingMenu from "../components/FloatingMenu.astro";
 ---
 
 <!doctype html>
@@ -16,36 +20,15 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="m-0 p-0">
+		<header class="bg-fuchsia-700 w-full h-64 flex items-center justify-center flex-col gap-5">
+			<img src="../../public/catLogo.jpg" alt="Logo de Un gato" class="h-28 w-72">
+			<SearchBar/>
+		</header>
+		<FloatingMenu/>
 		<slot />
+		<FloatingDock/>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
 </style>
