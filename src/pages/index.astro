@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from '@layouts/Layout.astro';
+import Card from '@components/Card.astro';
 ---
 
 <Layout title="Pagia de Prueba para Produccion">
-    <div class="hidden md:block relative w-full h-[400px] bg-cover bg-no-repeat bg-origin-border" style="background-image: url(../../public/textureBackground.jpg);">
+    <div class="hidden md:block relative w-full h-[400px] bg-cover bg-no-repeat bg-origin-border" style="background-image: url(public/textureBackground.jpg);">
         <div class="absolute right-20 top-24 flex flex-col items-end gap-5  ">
             <p class="text-white text-5xl uppercase font-semibold max-w-[20ch] text-end">Ver todos los Accesorios</p>
             <a href="#" class="py-6 px-20 rounded-tl-2xl rounded-br-2xl bg-fuchsia-400 text-white text-2xl hover:bg-fuchsia-600">Ver Todos</a>
@@ -12,11 +12,11 @@ import Card from '../components/Card.astro';
     </div>
     <div class="grid gap-4 p-[20px] grid-auto-fit-[375px] justify-items-center">
         <div class="grid gap-4 p-[20px] grid-auto-fit-[375px] justify-items-center md:grid-cols-2" >
-            <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
-            <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
-            <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
-            <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
-            <Card product='Accesorios' img='../../public/product-image.jpg' body='Ver Todos'/>
+            <Card product='Accesorios' img='public/product-image.jpg' body='Ver Todos'/>
+            <Card product='Accesorios' img='public/product-image.jpg' body='Ver Todos'/>
+            <Card product='Accesorios' img='public/product-image.jpg' body='Ver Todos'/>
+            <Card product='Accesorios' img='public/product-image.jpg' body='Ver Todos'/>
+            <Card product='Accesorios' img='public/product-image.jpg' body='Ver Todos'/>
         </div>
     </div>
 	
