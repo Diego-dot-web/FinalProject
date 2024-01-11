@@ -8,6 +8,7 @@ const { title } = Astro.props;
 import SearchBar from "../components/SearchBar.astro"
 import FloatingDock from "../components/FloatingDock.astro";
 import FloatingMenu from "../components/FloatingMenu.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <!doctype html>
@@ -25,10 +26,19 @@ import FloatingMenu from "../components/FloatingMenu.astro";
 			<img src="../../public/catLogo.jpg" alt="Logo de Un gato" class="h-28 w-72">
 			<SearchBar/>
 		</header>
+		<Navigation/>
 		<FloatingMenu/>
 		<slot />
 		<FloatingDock/>
 	</body>
 </html>
+
+
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&display=swap');
+
+	body{
+		font-family: 'Onest', sans-serif;;
+	}
+
 </style>
