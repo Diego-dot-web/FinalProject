@@ -9,5 +9,6 @@ export default {
 			addVariant('search-cancel', '&::-webkit-search-cancel-button');
 		  }),
 		require('@shrutibalasa/tailwind-grid-auto-fit'),
+		require('tailwind-animatecss'),
 	],
 }
