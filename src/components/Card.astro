@@ -1,5 +1,6 @@
 ---
 interface Props {
+	class?: string;
 	product: string;
 	body: string;
 	img: string;
@@ -9,11 +10,11 @@ interface Props {
 const { img, product, body, href } = Astro.props;
 ---
 
-<div class=`relative max-w-[375px] bg-[url(${img})] rounded-3xl overflow-hidden group`>
+<div class={`${Astro.props.class} relative max-w-[340px] rounded-3xl overflow-hidden group`}>
 	<a>
-		<img src=`${img}` alt="" class="rounded-3xl max-w-[375px] transition group-hover:scale-110">
+		<img src=`${img}` alt="" class="transition group-hover:scale-110">
 	</a>
-	<a class="absolute text-white bottom-[100px] right-[30px] z-10 text-4xl uppercase font-semibold transition group-hover:scale-100">{product}</a>
+	<a class="absolute text-white bottom-[45%] right-[5%] z-10 text-4xl uppercase font-semibold transition group-hover:scale-100">{product}</a>
 	<a class="absolute bottom-0 right-0 p-5 bg-fuchsia-400 text-white text-xl rounded-3xl rounded-tr-none rounded-bl-none hover:bg-fuchsia-600 transition group-hover:scale-100">
 		{body}
 	</a>
