@@ -4,9 +4,6 @@
     "baseUrl": ".",
     "paths": {
       "@/*" : ["src/*"],
-      "@components/*" : ["src/components/*"],
-      "public/*": ["public/*"],
-      "@layouts/*" : ["src/layouts/*"],
     }
   }
 }
